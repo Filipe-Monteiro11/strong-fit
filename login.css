@@ -1,0 +1,13 @@
+@charset "UTF-8";
+body{
+    font-family:'Oswald', sans-serif; 
+    text-align: center;
+}
+
+.botao{
+    background-color: #f79956;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}

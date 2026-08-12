@@ -1,22 +1,28 @@
 @charset "UTF-8";
 body{
     font-family: 'Oswald', sans-serif;
+    background-color:#121212 ;
+    color: white;
 }
 
 .menu{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
     text-decoration: none;
+    background-color: rgb(26, 25, 25);
+    padding: 15px;
+    margin: auto;
+    width: auto;
 }
 
 .menua{
     text-decoration: none;
-    color: #000000;
+    color: #fffdfd;
     padding: 5px 10px;
 }
 .botaoentrar{
-    background-color: #f79956;
+    background-color: #FF6B00;
     border-radius: 5px;
     padding: 3px 10px;
     text-decoration: none;

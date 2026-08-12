@@ -5,9 +5,9 @@ body{
 }
 
 .botao{
-    background-color: #f79956;
+    background-color: #FF6B00;
     border-radius: 8px;
     color: white;
     text-decoration: none;
-    font-size: larger;
+    font-size: 20px;
 }

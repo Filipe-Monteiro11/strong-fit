@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="logo">
+        <a href="#" class="logo">STRONG FIT</a>
+
     <!-- Ancoras dos conteudos-->
      <ul class="menu">
         <li><a class="menua" href="#sobre">Sobre</a></li>
@@ -18,70 +21,138 @@
         <li><a class="menua" href="#avaliacao">Avaliação</a></li>
         <li><a class="botaoentrar" href="login.html">Entrar </a></li>
     </ul>
+    </header>
+    <!--Chamando atencçaõ do cliente-->
+    <section class="hero">
+        <h1>TRANSFORME SEU CORPO</h1>
+        <P>Alcance seus objetivos com a gente</P>
+        <a href="planos" class="botao">MATRICULE-SE</a>
+    </section>
 
-    <!-- Cabeçalho -->
-     <h1>Força Fit</h1>
+    <!-- Sobre Nós -->
      <h2 id="sobre">Sobre Nós</h2>
-     <p class="descricao">Bem-vindo à <strong>Força Fit!</strong> somos uma academia dedicada a ajudar você a alcançar seus objetivos de fitness <br>
+     <p class="descricao">Bem-vindo à <strong>Strong Fit!</strong> somos uma academia dedicada a ajudar você a alcançar seus objetivos de fitness <br>
     de forma <em>eficiente e divertida</em>. <br> 
     Aqui focamos em oferecer um ambiente acolhedor e profissional, onde você pode se <br>
     desenvolver e alcançar resultados excepcionais! . </p>
 
     <!-- Seção de Serviços -->
     <h2 id="atividades">Atividades</h2>
-    <ul>
-        <li>Musculação</li>
-        <li>CrossFit</li>
-        <li>Pilates</li>
-        <li>Dança</li>
-        <li>Aula de Bike</li>
-        <li>Aula de Boxe</li>
-    </ul>
+    <section id="atividades" class="secao">
+        <h2>Atividades</h2>
+        <div class="cards">
+            <!--caixa musculação-->
+            <div class="card">
+                <h3>Musculação</h3>
+            </div>
+
+            <!--caixa crossfit-->
+            <div class="card">
+                <h3>CrossFit</h3>
+            </div>
+
+            <!--caixa pilates-->
+            <div class="card">
+                Pilates
+            </div>
+            
+            <!--caixa BIke-->
+            <div class="card">
+                <h3>Aula de Bike</h3>
+            </div>
+
+            <!--caixa boxe-->
+            <div class="card">
+                <h3>Aula de Boxe</h3>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Seção de planos -->
+    <section id="planos" class="secao">
     <h2 id="planos">Planos</h2>
-    <h3>Mensal</h3>
-    <ul>
-        <li>R$ 120,00</li>
-    </ul>
-    <h3>Semestral</h3>
-    <ul>
-        <li>R$ 600,00</li>
-    </ul>
-    <h3>Anual</h3>
-    <ul>
-        <li>R$ 1.200,00</li>
-    </ul>
+    <div class="cards">
+
+        <!--caixa mensal-->
+        <div class="plano">
+            <h3>Mensal</h3>
+            <p class="preco">R$ 120,00</p>
+            <a href="#" class="botao">ESCOHER PLANO</a>
+        </div>
+
+        <!--caixa Semestral -->
+        <div class="plano">
+            <h3>Semenstral</h3>
+            <p class="preco">R$ 180,00</p>
+            <a href="#" class="botao">ESCOHER PLANO</a>
+        </div>
+
+        <!--caixa Anual-->
+        <div class="plano">
+            <h3>Anual</h3>
+            <p class="preco">R$ 1000,00</p>
+            <a href="#" class="botao">ESCOHER PLANO</a>
+        </div>
+     </div>
+    </section>
 
     <!-- Seção de horários -->
-    <h2 id="horarios">Horários</h2>
-    <ul>
-        <li>Segunda a Sexta: 6h às 22h</li>
-        <li>Sábado: 8h às 18h</li>
-        <li>Domingo: 13h às 20h</li>
-    </ul>
+     <section id="horarios" class="secao">
+        <h2>Horários</h2>
+           <table class="tabela">
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Segunda a Sexta</td><td>6h às 22h</td></tr>
+                <tr><td>Sábado</td><td>8h às 18h</td></tr>
+                <tr><td>Domingo</td><td>13h às 20h</td></tr>
+            </tbody>
+        </table>
+     </section>
+  
 
     <!-- Seção de avaliação -->
-    <h2 id="avaliacao">Avaliação</h2>
-    <h3>Gésica: </h3>
-    <blockquote>Adorei a academia. Professores muito atenciosos, e espaço muito bom! .</blockquote>
+    <section id="avaliacao" class="secao">
+        <h2>Avaliação</h2>
+        <div class="cards">
+            <!--caixa de gesica-->
+            <div class="card depoimento">
+                <h3>Gésica</h3>
+                <blockquote>Adorei a academia. Professores muito atenciosos, e espaço muito bom!</blockquote>
+            </div>
 
-    <h3>João: </h3>
-    <blockquote>Academia muito boa, com ótimos equipamentos e professores qualificados. Recomendo!</blockquote>
+            <!--caixa de joao-->
+            <div class="card depoimento">
+                <h3>João</h3>
+                <blockquote>Academia muito boa, com ótimos equipamentos e professores qualificados. Recomendo!</blockquote>
+            </div>
 
-    <h3>André: </h3>
-    <blockquote>Excelente ambiente e equipe dedicada. Me ajudou a atingir meus objetivos de forma eficiente.</blockquote>
+            <!--caixa de andre-->
+            <div class="card depoimento">
+                <h3>André</h3>
+                <blockquote>Excelente ambiente e equipe dedicada. Me ajudou a atingir meus objetivos de forma eficiente.</blockquote>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Seção de contato -->
-    <h2 id="contato">Contato</h2>
-    <p>Telefone: (11) 1234-5678</p>
-    <p>E-mail: contato@forcafit.com</p>
-    <p>Endereço: Rua da Saúde, 123 - São Paulo, SP</p>
-    <p>Redes Sociais:</p>
-    <ul>
-        <li><a href="https://www.instagram.com/forcafit" target="_blank">Instagram</a></li>
-        <li><a href="https://www.tiktok.com/@forcafit" target="_blank">TikTok</a></li>
-        <li><a href="https://www.facebook.com/forcafit" target="_blank">Facebook</a></li>
-    </ul>
+       <footer id="contato" class="rodape">
+        <h2>Contato</h2>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>E-mail: contato@forcafit.com</p>
+        <p>Endereço: Rua da Saúde, 123 - São Paulo, SP</p>
+        <p>Redes Sociais:</p>
+        <ul class="redes">
+            <li><a href="https://www.instagram.com/forcafit" target="_blank">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@forcafit" target="_blank">TikTok</a></li>
+            <li><a href="https://www.facebook.com/forcafit" target="_blank">Facebook</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

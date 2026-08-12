@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-/* Estilo geral da página */
+/* Estilo da pagina completo */
 body {
     font-family: 'Oswald', sans-serif;
     background-color: #121212;   /* fundo escuro */
@@ -45,7 +45,7 @@ body {
 }
 
 .menua:hover {
-    color: #FF6B00;              /* fica laranja ao passar o mouse */
+    color: #eb9150;              /* fica laranja ao passar o mouse */
 }
 
 .botaoentrar {
@@ -55,6 +55,11 @@ body {
     text-decoration: none;
     color: white;
     font-weight: 700;
+}
+
+/* hover do Entrar (laranja mais claro) */
+.botaoentrar:hover {
+    background-color: #f58e45;
 }
 
 /*======== HERO (foto de fundo) ========*/
@@ -86,6 +91,11 @@ body {
     padding: 12px 30px;
     border-radius: 8px;
     font-weight: 700;
+}
+
+/* hover do MATRICULE-SE e ESCOLHER PLANO (laranja mais claro) */
+.botao:hover {
+    background-color: #f58e45;
 }
 
 /*======== SEÇÕES ========*/
@@ -121,10 +131,12 @@ body {
     padding: 15px;
     width: 200px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* sombra */
+    border: 2px solid transparent; /* borda invisível reserva o espaço */
 }
 
+/* CORRIGIDO: só muda a cor da borda, o card NÃO se mexe */
 .card:hover {
-    border: 2px solid #FF6B00;   /* borda laranja ao passar o mouse */
+    border-color: #f58d42;       /* borda laranja ao passar o mouse */
 }
 
 /* Foto dentro do card */
@@ -149,6 +161,7 @@ body {
     width: 220px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent; /* borda invisível reserva o espaço */
 }
 
 .plano h3 {
@@ -156,7 +169,11 @@ body {
 }
 
 .plano.destaque {
-    border: 3px solid #FF6B00;   /* plano "MAIS ESCOLHIDO" */
+    border-color: #FF6B00;       /* plano "MAIS ESCOLHIDO" */
+}
+
+.plano:hover {
+    border-color: #f58d42;       /* borda laranja ao passar o mouse */
 }
 
 .preco {

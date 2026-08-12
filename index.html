@@ -3,106 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Força Fit</title>
+    <title>Strong Fit</title>
+    <!-- Liga o CSS -->
     <link rel="stylesheet" href="home.css">
+    <!-- Fonte Oswald do Google -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--cabeçalho-->
+
+    <!-- CABEÇALHO: logo + menu -->
     <header class="cabecalho">
         <a href="#" class="logo">STRONG FIT</a>
 
-    <!-- Ancoras dos conteudos-->
-     <ul class="menu">
-        <li><a class="menua" href="#sobre">Sobre</a></li>
-        <li><a class="menua" href="#atividades">Atividades</a></li>
-        <li><a class="menua" href="#contato">Contato</a></li>
-        <li><a class="menua" href="#planos">Planos</a></li>
-        <li><a class="menua" href="#horarios">Horários</a></li>
-        <li><a class="menua" href="#avaliacao">Avaliação</a></li>
-        <li><a class="botaoentrar" href="login.html">Entrar </a></li>
-    </ul>
+        <ul class="menu">
+            <li><a class="menua" href="#sobre">Sobre</a></li>
+            <li><a class="menua" href="#atividades">Atividades</a></li>
+            <li><a class="menua" href="#contato">Contato</a></li>
+            <li><a class="menua" href="#planos">Planos</a></li>
+            <li><a class="menua" href="#horarios">Horários</a></li>
+            <li><a class="menua" href="#avaliacao">Avaliação</a></li>
+            <li><a class="botaoentrar" href="login.html">Entrar</a></li>
+        </ul>
     </header>
 
-    <!--Chamando atencçaõ do cliente-->
+    <!-- HERO: primeira parte, com a foto de fundo -->
     <section class="hero">
         <h1>TRANSFORME SEU CORPO</h1>
-        <P>Alcance seus objetivos com a gente</P>
-        <a href="planos" class="botao">MATRICULE-SE</a>
+        <p>Alcance seus objetivos com a gente</p>
+        <a href="#planos" class="botao">MATRICULE-SE</a>
     </section>
 
-    <!-- Sobre Nós -->
-     <h2 id="sobre" class="secaop">Sobre Nós</h2>
-     <p class="descricao">Bem-vindo à <strong>Strong Fit!</strong> somos uma academia dedicada a ajudar você a alcançar seus objetivos de fitness <br>
-    de forma <em>eficiente e divertida</em>. <br> 
-    Aqui focamos em oferecer um ambiente acolhedor e profissional, onde você pode se <br>
-    desenvolver e alcançar resultados excepcionais! . </p>
+    <!-- SOBRE NÓS -->
+    <section id="sobre" class="secao">
+        <h2>Sobre Nós</h2>
+        <p class="descricao">
+            Bem-vindo à <strong>Strong Fit!</strong> somos uma academia dedicada a ajudar você
+            a alcançar seus objetivos de fitness de forma <em>eficiente e divertida</em>.
+            Aqui focamos em oferecer um ambiente acolhedor e profissional, onde você pode se
+            desenvolver e alcançar resultados excepcionais!
+        </p>
+    </section>
 
-    <!-- Seção de Serviços -->
-    <h2 id="atividades">Atividades</h2>
+    <!-- ATIVIDADES: cards com foto -->
     <section id="atividades" class="secao">
         <h2>Atividades</h2>
         <div class="cards">
-            <!--caixa musculação-->
             <div class="card">
+                <img src="IMAGEM/musculação.png" alt="Musculação">
                 <h3>Musculação</h3>
             </div>
-
-            <!--caixa crossfit-->
             <div class="card">
+                <img src="IMAGEM/crossfit.png" alt="CrossFit">
                 <h3>CrossFit</h3>
             </div>
-
-            <!--caixa pilates-->
             <div class="card">
-                Pilates
+                <img src="IMAGEM/pilates.png" alt="Pilates">
+                <h3>Pilates</h3>
             </div>
-            
-            <!--caixa BIke-->
             <div class="card">
+                <img src="IMAGEM/dança.png" alt="Dança">
+                <h3>Dança</h3>
+            </div>
+            <div class="card">
+                <img src="IMAGEM/bike.png" alt="Aula de Bike">
                 <h3>Aula de Bike</h3>
             </div>
-
-            <!--caixa boxe-->
             <div class="card">
+                <img src="IMAGEM/boxe.png" alt="Aula de Boxe">
                 <h3>Aula de Boxe</h3>
             </div>
         </div>
     </section>
 
-
-    <!-- Seção de planos -->
+    <!-- PLANOS: 3 cards de preço -->
     <section id="planos" class="secao">
-    <h2 id="planos">Planos</h2>
-    <div class="cards">
-
-        <!--caixa mensal-->
-        <div class="plano">
-            <h3>Mensal</h3>
-            <p class="preco">R$ 120,00</p>
-            <a href="#" class="botao">ESCOHER PLANO</a>
+        <h2>Planos</h2>
+        <div class="cards">
+            <div class="plano">
+                <h3>Mensal</h3>
+                <p class="preco">R$ 120,00</p>
+                <a href="#" class="botao">ESCOLHER PLANO</a>
+            </div>
+            <!-- destaque = plano "MAIS ESCOLHIDO" -->
+            <div class="plano destaque">
+                <h3>Semestral</h3>
+                <p class="preco">R$ 600,00</p>
+                <a href="#" class="botao">ESCOLHER PLANO</a>
+            </div>
+            <div class="plano">
+                <h3>Anual</h3>
+                <p class="preco">R$ 1.200,00</p>
+                <a href="#" class="botao">ESCOLHER PLANO</a>
+            </div>
         </div>
-
-        <!--caixa Semestral -->
-        <div class="plano">
-            <h3>Semenstral</h3>
-            <p class="preco">R$ 180,00</p>
-            <a href="#" class="botao">ESCOHER PLANO</a>
-        </div>
-
-        <!--caixa Anual-->
-        <div class="plano">
-            <h3>Anual</h3>
-            <p class="preco">R$ 1000,00</p>
-            <a href="#" class="botao">ESCOHER PLANO</a>
-        </div>
-     </div>
     </section>
 
-    <!-- Seção de horários -->
-     <section id="horarios" class="secao">
+    <!-- HORÁRIOS: tabela -->
+    <section id="horarios" class="secao">
         <h2>Horários</h2>
-           <table class="tabela">
+        <table class="tabela">
             <thead>
                 <tr>
                     <th>Dia</th>
@@ -115,26 +114,20 @@
                 <tr><td>Domingo</td><td>13h às 20h</td></tr>
             </tbody>
         </table>
-     </section>
-  
+    </section>
 
-    <!-- Seção de avaliação -->
+    <!-- AVALIAÇÃO: depoimentos -->
     <section id="avaliacao" class="secao">
         <h2>Avaliação</h2>
         <div class="cards">
-            <!--caixa de gesica-->
             <div class="card depoimento">
                 <h3>Gésica</h3>
                 <blockquote>Adorei a academia. Professores muito atenciosos, e espaço muito bom!</blockquote>
             </div>
-
-            <!--caixa de joao-->
             <div class="card depoimento">
                 <h3>João</h3>
                 <blockquote>Academia muito boa, com ótimos equipamentos e professores qualificados. Recomendo!</blockquote>
             </div>
-
-            <!--caixa de andre-->
             <div class="card depoimento">
                 <h3>André</h3>
                 <blockquote>Excelente ambiente e equipe dedicada. Me ajudou a atingir meus objetivos de forma eficiente.</blockquote>
@@ -142,19 +135,19 @@
         </div>
     </section>
 
-
-    <!-- Seção de contato -->
-       <footer id="contato" class="rodape">
+    <!-- RODAPÉ: contato -->
+    <footer id="contato" class="rodape">
         <h2>Contato</h2>
         <p>Telefone: (11) 1234-5678</p>
-        <p>E-mail: contato@forcafit.com</p>
+        <p>E-mail: contato@strongfit.com</p>
         <p>Endereço: Rua da Saúde, 123 - São Paulo, SP</p>
         <p>Redes Sociais:</p>
         <ul class="redes">
-            <li><a href="https://www.instagram.com/forcafit" target="_blank">Instagram</a></li>
-            <li><a href="https://www.tiktok.com/@forcafit" target="_blank">TikTok</a></li>
-            <li><a href="https://www.facebook.com/forcafit" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/strongfit" target="_blank">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@strongfit" target="_blank">TikTok</a></li>
+            <li><a href="https://www.facebook.com/strongfit" target="_blank">Facebook</a></li>
         </ul>
     </footer>
+
 </body>
 </html>

@@ -1,51 +1,54 @@
 @charset "UTF-8";
 
+/* Zera as margens e paddings padrão do navegador */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+/* Estilo geral da página */
+body {
     font-family: 'Oswald', sans-serif;
-    background-color:#121212 ;
-    color: white;
-}
-/*=======cabeçalho===========*/
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color:#1a1a1a ;
+    background-color: #121212;   /* fundo escuro */
+    color: white;                /* texto branco */
 }
 
-.logo{
+/*======== CABEÇALHO ========*/
+.cabecalho {
+    display: flex;               /* logo e menu lado a lado */
+    justify-content: space-between; /* um de cada lado */
+    align-items: center;         /* alinha na vertical */
+    padding: 15px 30px;
+    background-color: #1a1a1a;
+}
+
+.logo {
     font-size: 28px;
     font-weight: 700;
-    color:  #FF6B00;
+    color: #FF6B00;              /* laranja */
     text-decoration: none;
     letter-spacing: 2px;
 }
 
-.menu{
-    list-style: none;
+.menu {
+    list-style: none;            /* tira as bolinhas */
     display: flex;
-    gap: 20px;
+    gap: 20px;                   /* espaço entre os links */
     align-items: center;
 }
 
-.menua{
-    text-decoration: none;
-    color: #ffffff;
+.menua {
+    text-decoration: none;       /* tira o sublinhado */
+    color: white;
     padding: 5px 10px;
-    transition: color 0.3s;
 }
 
-.menua:hover{
-    color: #FF6B00 ;
+.menua:hover {
+    color: #FF6B00;              /* fica laranja ao passar o mouse */
 }
 
-.botaoentrar{
+.botaoentrar {
     background-color: #FF6B00;
     border-radius: 5px;
     padding: 8px 18px;
@@ -54,145 +57,145 @@ body{
     font-weight: 700;
 }
 
-.botaoentrar:hover{
-    background-color: #f38e46;
-}
-
-/*========Hero========*/
-.hero{
+/*======== HERO (foto de fundo) ========*/
+.hero {
+    background-image: url('IMAGEM/fundo.png'); /* foto da academia */
+    background-size: cover;      /* preenche a tela toda */
+    background-position: center; /* centraliza a foto */
     text-align: center;
-    padding: 120px 20px;
-    background-color: #1a1a1a;
+    padding: 150px 20px;
 }
 
-.hero h1{
+.hero h1 {
     font-size: 52px;
     color: #FF6B00;
     margin-bottom: 10px;
 }
 
-.hero p{
+.hero p {
     font-size: 20px;
     margin-bottom: 30px;
 }
 
-/*Botao generico*/
-.botao{
+/*======== BOTÃO GENÉRICO ========*/
+.botao {
     display: inline-block;
-    background-color: #eb6200;
+    background-color: #FF6B00;
     text-decoration: none;
     color: white;
     padding: 12px 30px;
     border-radius: 8px;
     font-weight: 700;
-    transition: background-color 0.3s;
 }
 
-.botao:hover{
-    background-color: #f58e45;
-}
-
-/*===========seção gerais=========*/
-.secao{
+/*======== SEÇÕES ========*/
+.secao {
     padding: 60px 20px;
     text-align: center;
 }
 
-.secao h2{
+.secao h2 {
     font-size: 36px;
     color: #FF6B00;
     margin-bottom: 30px;
 }
 
-.descricao{
-    max-width: 700px;
-    margin: 0 auto;
+.descricao {
+    max-width: 700px;            /* texto não fica esticado */
+    margin: 0 auto;              /* centraliza */
     font-size: 18px;
     line-height: 1.6;
 }
 
-/*============cards de atividades e outros===========*/
-.cards{
+/*======== CARDS (atividades e depoimentos) ========*/
+.cards {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /*quebra a linha caso n de */
-    gap: 20px;
+    justify-content: center;     /* centraliza os cards */
+    flex-wrap: wrap;             /* quebra linha se não couber */
+    gap: 20px;                   /* espaço entre os cards */
 }
 
-.card{
+.card {
     background-color: #1e1e1e;
-    border-radius: 12px;
-    padding: 25px;
+    border-radius: 12px;         /* cantos arredondados */
+    padding: 15px;
     width: 200px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: border 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* sombra */
 }
 
-.card:hover{
-    border: 2px solid #FF6B00;
+.card:hover {
+    border: 2px solid #FF6B00;   /* borda laranja ao passar o mouse */
 }
 
-.icone{
-    font-size: 40px;
-    display: block;
+/* Foto dentro do card */
+.card img {
+    width: 100%;                 /* ocupa a largura do card */
+    height: 150px;
+    object-fit: cover;           /* corta a foto sem distorcer */
+    border-radius: 8px;
     margin-bottom: 10px;
 }
 
-.card h3{
+.card h3 {
     color: #FF6B00;
+    text-align: center;
 }
 
-/*==========PLANOS CAIXAS==========*/
-.plano{
+/*======== PLANOS ========*/
+.plano {
     background-color: #1e1e1e;
     border-radius: 12px;
     padding: 30px;
     width: 220px;
+    text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.pano h3{
+.plano h3 {
     font-size: 24px;
 }
 
-.preco{
+.plano.destaque {
+    border: 3px solid #FF6B00;   /* plano "MAIS ESCOLHIDO" */
+}
+
+.preco {
     font-size: 32px;
     color: #FF6B00;
     margin: 15px 0;
 }
 
-/*========Tabela de horarios=============*/
-.tabela{
+/*======== TABELA DE HORÁRIOS ========*/
+.tabela {
     margin: 0 auto;
-    border-collapse:collapse ;
+    border-collapse: collapse;
     background-color: #1e1e1e;
     border-radius: 12px;
     overflow: hidden;
 }
 
 .tabela th,
-.tabela td{
+.tabela td {
     padding: 12px 30px;
-    border-bottom:1px solid #333 ;
+    border-bottom: 1px solid #333;
 }
 
-.tabela th{
+.tabela th {
     background-color: #FF6B00;
     color: #121212;
 }
 
-* ===== DEPOIMENTOS ===== */
+/*======== DEPOIMENTOS ========*/
 .depoimento {
     width: 260px;
 }
 
 .depoimento blockquote {
-    font-size: 16px;
     font-style: italic;
     margin-top: 10px;
 }
 
-/* ===== RODAPÉ ===== */
+/*======== RODAPÉ ========*/
 .rodape {
     background-color: #1a1a1a;
     text-align: center;
@@ -209,14 +212,9 @@ body{
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 10px;
 }
 
 .redes a {
     color: #FF6B00;
     text-decoration: none;
-}
-
-.redes a:hover {
-    text-decoration: underline;
 }

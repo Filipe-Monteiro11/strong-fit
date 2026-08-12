@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Entrar - Strong Fit</title>
     <link rel="stylesheet" href="login.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Força Fit</h1>
-    <h2>Entrar</h2>
-    <form>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
 
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required><br><br>
+    <div class="card-login">
+        <h1>STRONG FIT</h1>
+        <p>Entre para continuar</p>
 
-        <input type="submit" value="Entrar" class="botao">
-    </form>
-    <p><a class="botao" href="index.html">Voltar</a></p>
-    
+        <form action="#" method="post">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com">
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+            <button type="submit" class="botao">ENTRAR</button>
+        </form>
+
+        <a href="index.html" class="voltar">Voltar para a home</a>
+    </div>
+
 </body>
 </html>

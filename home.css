@@ -134,7 +134,7 @@ body {
     border: 2px solid transparent; /* borda invisível reserva o espaço */
 }
 
-/* CORRIGIDO: só muda a cor da borda, o card NÃO se mexe */
+/* só muda a cor da borda, o card NÃO se mexe */
 .card:hover {
     border-color: #f58d42;       /* borda laranja ao passar o mouse */
 }
@@ -234,4 +234,105 @@ body {
 .redes a {
     color: #FF6B00;
     text-decoration: none;
+}
+
+/*====================================================
+    RESPONSIVIDADE - STRONG FIT
+    (media queries: ajustam o site ao tamanho da tela)
+====================================================*/
+
+/*======== TABLET (telas até 900px) ========*/
+@media (max-width: 900px) {
+
+    /* Hero com título e texto um pouco menores */
+    .hero {
+        padding: 100px 20px;     /* menos espaço vertical */
+    }
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    /* Título das seções um pouco menor */
+    .secao h2 {
+        font-size: 30px;
+    }
+}
+
+/*======== CELULAR (telas até 600px) ========*/
+@media (max-width: 600px) {
+
+    /* Cabeçalho: logo e menu empilhados (um embaixo do outro) */
+    .cabecalho {
+        flex-direction: column;  /* vira coluna */
+        gap: 10px;
+        padding: 15px 15px;
+    }
+
+    /* Menu vira coluna e centraliza */
+    .menu {
+        flex-direction: column;  /* links empilhados */
+        gap: 8px;
+        width: 100%;
+    }
+
+    /* Botão Entrar ocupa a largura toda (mais fácil de tocar) */
+    .botaoentrar {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Hero: título e texto menores para caber no celular */
+    .hero {
+        padding: 80px 15px;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Botões (MATRICULE-SE, ESCOLHER PLANO) em largura total */
+    .botao {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;          /* centraliza */
+    }
+
+    /* Cards de atividades empilhados e mais largos */
+    .card {
+        width: 90%;              /* quase toda a largura da tela */
+        max-width: 280px;
+    }
+
+    /* Fotos dos cards um pouco menores */
+    .card img {
+        height: 180px;
+    }
+
+    /* Planos empilhados e mais largos */
+    .plano {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* Tabela de horários: ganha rolagem lateral (não quebra) */
+    .tabela {
+        display: block;
+        overflow-x: auto;        /* rola para o lado se não couber */
+        white-space: nowrap;     /* não quebra as células */
+    }
+
+    /* Depoimentos empilhados e mais largos */
+    .depoimento {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* Rodapé com menos espaço */
+    .rodape {
+        padding: 30px 15px;
+    }
 }

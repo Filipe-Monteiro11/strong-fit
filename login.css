@@ -77,3 +77,35 @@ input {
 .voltar:hover {
     text-decoration: underline;
 }
+
+/*====================================================
+    RESPONSIVIDADE - TELA DE LOGIN
+    (media queries: ajustam a tela ao tamanho do aparelho)
+====================================================*/
+
+/*======== CELULAR (telas até 480px) ========*/
+@media (max-width: 480px) {
+
+    /* Caixa de login ocupa quase toda a largura da tela */
+    .card-login {
+        width: 90%;              /* quase toda a tela */
+        padding: 30px 20px;      /* menos espaçamento interno */
+    }
+
+    /* Título do login um pouco menor */
+    .card-login h1 {
+        font-size: 1.6rem;
+    }
+
+    /* Campos com fonte 16px: evita zoom automático no iPhone */
+    input {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Botão de entrar com fonte 16px e mais alto (fácil de tocar) */
+    .botao {
+        font-size: 16px;
+        padding: 14px;
+    }
+}
